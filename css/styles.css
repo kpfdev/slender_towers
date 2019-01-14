@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  z-index: 0;
+}
+
+button {
+  color: white;
+}
+
+.btn-info {
+  color: white;
+}
+
+#column-left {
+  -ms-flex: 0 0 420px;
+  flex: 0 0 420px;
+}
+
+#console-color {
+  background-color: rgba(50,50,50,0.95);
+  box-shadow: 2px 6px 30px rgba(0,0,0,0.5);
+}
+
+#console-height {
+  background-color: rgba(50,50,50,0.95);
+  box-shadow: 2px 6px 30px rgba(0,0,0,0.5);
+}
+
+.colors {
+  background: linear-gradient(to right, #6C0E23,#BF211E,#F95738,#FF9D42,#FFCD2B,#FFD85B);
+  margin-bottom: 5px;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #728285;
+}
+
+.dropdown-header {
+  color: #bdc7c9;
+}
+
+.dropdown-menu {
+  background: rgba(70,70,70, 1);
+  box-shadow: 2px 6px 30px rgba(0,0,0,0.5);
+}
+
+.dropdown-item {
+  color: #96acb0;
+}
+
+.label {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+.fixed-row-bottom { position: fixed; bottom: 0;}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.ramp {
+  height: 40px;
+  width: 100%;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 600px;
+    overflow-x: hidden;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.text-soft {
+  color: #bdc7c9;
+}
+
+.text-dull {
+  color: #96acb0;
+}

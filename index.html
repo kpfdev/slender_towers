@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Nighttime Activity in NYC</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+
+  </head>
+
+  <body>
+
+    <!-- Page Content -->
+
+    <div id='map' class='position-absolute w-100 h-100'></div>
+
+    <div class='container-fluid text-dull'>
+
+      <div class='row w-100 pl-4 pt-4'>
+
+        <div id='column-left' class='col'>
+
+          <div id='console-color' class='rounded p-3'>
+
+            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-secondary" disabled><strong>Color =</strong></button>
+
+              <div  class="btn-group btn-group-lg dropright w-100" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle w-100" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  # of All Open Businesses
+                </button>
+                <div class="dropdown-menu scrollable-menu w-100" id="dropdown-menu-1" aria-labelledby="dropdownMenuButton">
+
+                  <h6 class="dropdown-header"><strong>Options</strong></h6>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" onclick='updateColorLinear(settings.color_column, 1, [0, 5, 10, 25, 50, 100]), settings.color_by_places = true' href="#">Height</button>
+                </div>
+              </div>
+            </div>
+
+            <div class='mt-5 mb-3 w-100'>
+              <div class='ramp colors'>
+              </div>
+
+              <div class='ramp labels'>
+                <div id='step0' class='label'>Low</div>
+                <div id='step1' class='label'></div>
+                <div id='step2' class='label'></div>
+                <div id='step3' class='label'></div>
+                <div id='step4' class='label'></div>
+                <div id='step5' class='label'>High</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id='console-height' class='rounded mt-4 p-3'>
+
+            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-secondary" disabled><strong>Height =</strong></button>
+
+              <div  class="btn-group btn-group-lg dropright w-100" role="group">
+                <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle w-100" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All Open Businesses
+                </button>
+                <div class="dropdown-menu scrollable-menu w-100" id="dropdown-menu-2" aria-labelledby="dropdownMenuButton">
+
+                  <button class="dropdown-item" onclick='chooseHeight("height")' href="#">Height</button>
+                  <button class="dropdown-item" onclick='chooseHeight("area")' href="#">Area</button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+
+</html>

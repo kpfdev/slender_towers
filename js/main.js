@@ -73,12 +73,12 @@ map.on('load', function() {
               'interpolate',
               ['linear'],
               ['number', ['get', 'shadow']],
-              250, colorRamps[0][0],
-              500, colorRamps[0][1],
-              750, colorRamps[0][2],
-              1000, colorRamps[0][3],
-              1250, colorRamps[0][4],
-              1500, colorRamps[0][5]
+              250, colorRamps[1][0],
+              500, colorRamps[1][1],
+              750, colorRamps[1][2],
+              1000, colorRamps[1][3],
+              1250, colorRamps[1][4],
+              1500, colorRamps[1][5]
         ],
         'fill-opacity': 0.8
     }
